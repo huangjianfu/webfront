@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>布局-display-block</title>
+    <style>
+        .sample{background-color: pink;}
+        .sample{display: block;}
+        .sample{width: 200px;height: 200px;}
+
+        .sample2{background-color: red;}
+        .sample2{display: block;}
+        /*默认为父元素的宽度，在不同行显示，能设置宽高*/
+        /*div p 默认display 是block方式*/
+    </style>
+</head>
+<body>
+<span>before block</span>
+<div class="sample">display: block
+    <div class="sample2">display: block sample2</div>
+</div>
+<span>after block</span>
+
+<div class="sample2">display: block sample2</div>
+<p style="background-color: blue">p display</p>
+</body>
+</html>
